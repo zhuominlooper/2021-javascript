@@ -1,0 +1,51 @@
+{
+  "name": "simple-lodash-fun",
+  "version": "1.1.1",
+  "createTime": "2021/7/10",
+  "description": "this is a package of simple lodash",
+  "main": "index.js",
+  "types": "types/index.d.ts",
+  "keywords": [
+    "lodash",
+    "simple",
+    "test",
+    "function",
+    "node",
+    "webpack"
+  ],
+  "scripts": {
+    "build": "npm run build:umd && npm run build:window:min && npm run build:cjs:min",
+    "build:umd": "cross-env NODE_ENV=umd webpack",
+    "build:umd:min": "cross-env NODE_ENV=umd:min webpack",
+    "build:window": "cross-env NODE_ENV=window webpack",
+    "build:window:min": "cross-env NODE_ENV=window:min webpack",
+    "build:cjs": "cross-env NODE_ENV=commonjs webpack",
+    "build:cjs:min": "cross-env NODE_ENV=commonjs:min webpack",
+    "lint": "eslint lib/*",
+    "lint:fix": "eslint --fix lib/*",
+    "test:mochawesome": "mocha --recursive --reporter mochawesome",
+    "test": "nyc --reporter=text  mocha --timeout=5000"
+  },
+  "author": "looper.zhuo",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "chai": "^4.3.4",
+    "cross-env": "^7.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^25.2.4",
+    "mocha": "^9.0.2",
+    "mochawesome": "^6.2.2",
+    "nyc": "^15.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
