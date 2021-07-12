@@ -1,8 +1,8 @@
 .DS_Store
 node_modules/
 dist/
-npm-debug.log*
-**/*.log
+.nyc_output/
+mochawesome-report/
 
 # Editor directories and files
 .idea
