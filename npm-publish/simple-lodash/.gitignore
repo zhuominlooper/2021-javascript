@@ -2,8 +2,8 @@
 node_modules/
 dist/
 
-.nyc_output/
-mochawesome-report/
+/.nyc_output
+/mochawesome-report
 
 # Editor directories and files
 .idea
