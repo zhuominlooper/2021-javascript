@@ -15,7 +15,7 @@ describe("pseudoArr2Array函数测试:", function () {
     expect(Fun.pseudoArr2Array([])).to.be.deep.equal([]);
   });
   it("result:", function () {
-    expect(Fun.accurateType([])).to.not.be.equal(null);
+    expect(Fun.pseudoArr2Array([])).to.not.be.equal(null);
   });
 });
 
@@ -26,6 +26,22 @@ describe("deepClone函数测试:", function () {
     });
   });
   it("result:", function () {
-    expect(Fun.accurateType([1, 2])).to.not.be.equal([]);
+    expect(Fun.deepClone([1, 2])).to.not.be.equal([]);
+  });
+});
+
+describe("convertDimensional函数测试:", function () {
+  it("result:", function () {
+    expect(Fun.convertDimensional([3, 4, [5, 6, [7, 8]]])).to.be.deep.equal([
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+    ]);
+  });
+  it("result:", function () {
+    expect(Fun.convertDimensional([1, 2])).to.not.be.equal([]);
   });
 });

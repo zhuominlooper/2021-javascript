@@ -18,3 +18,10 @@ export function pseudoArr2Array(data: any) {}
  * @returns any
  */
 export function deepClone(data: any) {}
+
+/**
+ * 多维数组转一维数组
+ * @param data any
+ * @returns any
+ */
+export function convertDimensional(data: any) {}

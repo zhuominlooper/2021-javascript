@@ -41,8 +41,24 @@ function deepClone(value) {
   return result;
 }
 
+// 4. 多维数组转为一维数组， 目前仅支持全部 Number -> Ndumber, String -> Number
+function convertDimensional(arr) {
+  try {
+    return arr
+      .join()
+      .split(",")
+      .map((value) => {
+        return Number(value);
+      });
+  } catch (err) {
+    console.log(error(`convertDimensional ERROR! ${err}`));
+    return [];
+  }
+}
+
 module.exports = {
   accurateType,
   pseudoArr2Array,
   deepClone,
+  convertDimensional,
 };
