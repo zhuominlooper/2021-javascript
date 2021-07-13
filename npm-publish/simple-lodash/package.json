@@ -23,10 +23,10 @@
     "build:cjs:min": "cross-env NODE_ENV=commonjs:min webpack",
     "lint": "eslint lib/*",
     "lint:fix": "eslint --fix lib/*",
-    "test:mochawesome": "mocha --recursive --reporter mochawesome",
+    "test:mochawesome": "mocha --timeout=5000 --recursive --reporter mochawesome",
     "test": "nyc --reporter=text  mocha --timeout=5000"
   },
-  "author": "looper.zhuo",
+  "author": "looper.zhuo,charles.chen",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1"
