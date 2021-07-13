@@ -1,5 +1,6 @@
 const Fun = require("../lib/main.js");
 var expect = require("chai").expect;
+
 describe("accurateType函数测试:", function () {
   it("result:", function () {
     expect(Fun.accurateType([])).to.be.equal("Array");

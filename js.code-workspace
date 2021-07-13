@@ -24,9 +24,12 @@
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true, //编写方法时候在括号之间加上空格
 
     //eslint配置
-    "eslint.validate": ["javascript", "vue", "html"],
+    "eslint.validate": ["javascript", "vue", "html", "ts"],
 
     //保存的配置
+    "[ts]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[json]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
