@@ -1,6 +1,5 @@
-const Fun = require("../lib/main.js");
+const Fun = require("../lib/app.js");
 var expect = require("chai").expect;
-
 describe("accurateType函数测试:", function () {
   it("result:", function () {
     expect(Fun.accurateType([])).to.be.equal("Array");
@@ -27,5 +26,16 @@ describe("deepClone函数测试:", function () {
   });
   it("result:", function () {
     expect(Fun.deepClone([1, 2])).to.not.be.equal([]);
+  });
+});
+
+describe("convertDimensional函数测试:", function () {
+  it("result:", function () {
+    expect(Fun.convertDimensional([3, 4, [5, 6, [7, 8]]])).to.be.deep.equal([
+      3, 4, 5, 6, 7, 8,
+    ]);
+  });
+  it("result:", function () {
+    expect(Fun.convertDimensional([1, 2])).to.not.be.equal([]);
   });
 });

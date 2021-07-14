@@ -26,11 +26,13 @@
 
 ## **Current Function**
 
-| 函数名称        |         函数作用 | 是否测试通过 | 创建时间  |
-| --------------- | ---------------: | -----------: | :-------: |
-| accurateType    | 准确判断数据类型 |          YES | 2021/7/10 |
-| pseudoArr2Array |   伪数组转真数组 |          YES | 2021/7/10 |
-| deepClone       |           深拷贝 |          YES | 2021/7/12 |
+| 函数名称           |           函数作用 | 是否测试通过 | 创建时间  |
+| ------------------ | -----------------: | -----------: | :-------: |
+| accurateType       |   准确判断数据类型 |          YES | 2021/7/10 |
+| pseudoArr2Array    |     伪数组转真数组 |          YES | 2021/7/10 |
+| deepClone          |             深拷贝 |          YES | 2021/7/12 |
+| convertDimensional | 多维数组转一维数组 |          YES | 2021/7/14 |
+| counterfeitSort    |           冒泡排序 |          YES | 2021/7/15 |
 
 ---
 
@@ -92,13 +94,19 @@ nyc
 
 ## **Engineering**
 
-## <img src="https://user-gold-cdn.xitu.io/2018/5/13/163583bef8f07f05?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" width=556 height=256 />
+ <img src="https://user-gold-cdn.xitu.io/2018/5/13/163583bef8f07f05?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" width=556 height=256 />
 
 ---
 
 ## **Versions**
 
 ```javascript
+v-1.1.3(2021/7/15)
+tag:拆分包文件，统一导出方法，整理文件夹，添加了冒泡排序
+
+v-1.1.2(2021/7/14)
+tag:添加convertDimensional函数，实现多维数组转一维，目前仅支持全部number或者String的多维数组转为number的一维数组
+
 v-1.1.1(2021/7/12)
 tag:添加了几个常用函数并测试,添加cdn包
 
@@ -110,5 +118,13 @@ tag:初始化包
 
 
 ```
+
+---
+
+## **Collaborators**
+
+### **[looper.zhuo](https://github.com/zhuominlooper)**
+
+### **[charles.chen](https://github.com/Ahh-h)**
 
 ---

@@ -17,4 +17,18 @@ export function pseudoArr2Array(data: any): Array {}
  * @param data any
  * @returns any
  */
-export function deepClone(data: any): any {}
+export function deepClone(data: any) {}
+
+/**
+ * 多维数组转一维数组
+ * @param data Array
+ * @returns any
+ */
+export function convertDimensional(data: Array) {}
+
+/**
+ * 冒泡排序
+ * @param data Array
+ * @returns Object
+ */
+export function counterfeitSort(data: Array) {}

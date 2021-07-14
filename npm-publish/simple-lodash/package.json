@@ -1,8 +1,8 @@
 {
   "name": "simple-lodash-fun",
-  "version": "1.1.1",
+  "version": "1.1.4",
   "createTime": "2021/7/10",
-  "description": "this is a package of simple lodash",
+  "description": "This is a simplified version of Lodash, but it's no less functional",
   "main": "index.js",
   "types": "types/index.d.ts",
   "keywords": [
@@ -13,8 +13,12 @@
     "node",
     "webpack"
   ],
+  "github": {
+    "url": "https://github.com/zhuominlooper/2021-javascript/tree/dev",
+    "branch": "dev"
+  },
   "scripts": {
-    "build": "npm run build:umd && npm run build:window:min && npm run build:cjs:min",
+    "build": "npm run build:umd:min && npm run build:window:min && npm run build:cjs:min",
     "build:umd": "cross-env NODE_ENV=umd webpack",
     "build:umd:min": "cross-env NODE_ENV=umd:min webpack",
     "build:window": "cross-env NODE_ENV=window webpack",
