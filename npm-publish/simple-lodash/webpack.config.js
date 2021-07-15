@@ -12,7 +12,14 @@ const config = {
     libraryTarget: libraryTarget,
   },
   module: {
-    rules: [{ test: /\.js$/, use: "babel-loader" }],
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        include: path.resolve(__dirname, "lib"),
+        use: "babel-loader", //bable是从右向左，从下到上执行
+      },
+    ], //es6转es5
   },
   plugins: [],
 };
