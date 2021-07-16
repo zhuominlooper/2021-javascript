@@ -1,0 +1,11 @@
+//此文件主要用于把高级的js语法(es5+)转换成es5
+{
+  "presets": [
+    "@babel/preset-env" //es6转es5
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }], //转化装饰器
+    ["@babel/plugin-proposal-class-properties", { "loose": true }], //转化class
+    ["@babel/plugin-transform-runtime"] //转换一些es6的高级api，比如promise，生成器函数
+  ]
+}
