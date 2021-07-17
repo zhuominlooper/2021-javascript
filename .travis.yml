@@ -7,6 +7,8 @@ node_js:
 cache:
   directories:
     - node_modules
+before_install:
+  - cd ./npm-publish/simple-lodash
 install:
   - npm install
 scripts:
