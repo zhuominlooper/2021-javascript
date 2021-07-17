@@ -1,6 +1,6 @@
 ## **simple-lodash-fun**
 
-![Build Status](https://travis-ci.org/wulv/del-expired-file.png)
+[![Build Status](https://www.travis-ci.com/zhuominlooper/2021-javascript.svg?branch=main)](https://www.travis-ci.com/zhuominlooper/2021-javascript)
 ![npm version](https://img.shields.io/npm/v/simple-lodash-fun.svg?style=flat-square)
 ![npm downloads](https://img.shields.io/npm/dm/simple-lodash-fun.svg?style=flat-square)
 ![gitter chat](https://img.shields.io/gitter/room/mzabriskie/simple-lodash-fun.svg?style=flat-square)
