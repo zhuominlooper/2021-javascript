@@ -1,6 +1,6 @@
 ## **simple-lodash-fun**
 
-![Build Status](https://travis-ci.org/wulv/del-expired-file.png)
+[![Build Status](https://www.travis-ci.com/zhuominlooper/2021-javascript.svg?branch=main)](https://www.travis-ci.com/zhuominlooper/2021-javascript)
 ![npm version](https://img.shields.io/npm/v/simple-lodash-fun.svg?style=flat-square)
 ![npm downloads](https://img.shields.io/npm/dm/simple-lodash-fun.svg?style=flat-square)
 ![gitter chat](https://img.shields.io/gitter/room/mzabriskie/simple-lodash-fun.svg?style=flat-square)
@@ -101,6 +101,12 @@ nyc
 ## **Versions**
 
 ```javascript
+v-1.1.6(2021/7/17)
+tag:配置CI脚本支持自动化发布
+
+v-1.1.6(2021/7/17)
+tag:初始化CI配置和.env配置
+
 v-1.1.5(2021/7/16)
 tag:修改babelrc的配置，支持es5以上的高级特性语法
 
