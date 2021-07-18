@@ -19,6 +19,7 @@ install:
   - npm install
 scripts:
   - npm run test
+  - npm run test:coveralls
   - npm run lint
-  - npm version patch
+  - npm run minor
   - npm publish
