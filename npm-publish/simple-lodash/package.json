@@ -1,6 +1,6 @@
 {
   "name": "simple-lodash-fun",
-  "version": "1.1.9",
+  "version": "1.2.1",
   "createTime": "2021/7/10",
   "description": "This is a simplified version of Lodash, but it's no less functional",
   "main": "index.js",
