@@ -1,10 +1,12 @@
 ## **simple-lodash-fun**
 
 [![Build Status](https://www.travis-ci.com/zhuominlooper/2021-javascript.svg?branch=main)](https://www.travis-ci.com/zhuominlooper/2021-javascript)
-![npm version](https://img.shields.io/npm/v/simple-lodash-fun.svg?style=flat-square)
-![npm downloads](https://img.shields.io/npm/dm/simple-lodash-fun.svg?style=flat-square)
-![gitter chat](https://img.shields.io/gitter/room/mzabriskie/simple-lodash-fun.svg?style=flat-square)
-![code coverage](https://img.shields.io/coveralls/mzabriskie/simple-lodash-fun.svg?style=flat-square)
+[![Coverage Status](https://coveralls.io/repos/github/zhuominlooper/2021-javascript/badge.svg?branch=dev)](https://coveralls.io/github/zhuominlooper/2021-javascript?branch=dev)
+[![npm version](https://img.shields.io/npm/v/simple-lodash-fun.svg)](https://www.npmjs.com/package/simple-lodash-fun)
+[![npm downloads](https://img.shields.io/npm/dm/simple-lodash-fun.svg)](https://www.npmjs.com/package/simple-lodash-fun)
+![gitter chat](https://img.shields.io/gitter/room/mzabriskie/simple-lodash-fun.svg)
+![license](https://img.shields.io/badge/license-MIT-green)
+![author](https://img.shields.io/badge/author-looper.zhuo-orange)![node](https://img.shields.io/badge/node%40latest-%3E%3D%206.0.0-brightgreen)
 
 ---
 
@@ -101,6 +103,12 @@ nyc
 ## **Versions**
 
 ```javascript
+v-1.2.7(2021/7/17)
+tag:成功配置一套完整的自动化构建脚本
+
+v-1.1.7(2021/7/17)
+tag:配置自动化测试CI脚本
+
 v-1.1.6(2021/7/17)
 tag:配置CI脚本支持自动化发布
 
