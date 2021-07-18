@@ -6,7 +6,8 @@
 [![npm downloads](https://img.shields.io/npm/dm/simple-lodash-fun.svg)](https://www.npmjs.com/package/simple-lodash-fun)
 ![gitter chat](https://img.shields.io/gitter/room/mzabriskie/simple-lodash-fun.svg)
 ![license](https://img.shields.io/badge/license-MIT-green)
-![author](https://img.shields.io/badge/author-looper.zhuo-orange)![node](https://img.shields.io/badge/node%40latest-%3E%3D%206.0.0-brightgreen)
+[![author](https://img.shields.io/badge/author-looper.zhuo-orange)](https://github.com/zhuominlooper)
+![node](https://img.shields.io/badge/node%40latest-%3E%3D%206.0.0-brightgreen)
 
 ---
 
@@ -21,7 +22,7 @@
 ## **CDN Installation**
 
 ```javascript
-<script src="https://cdn.jsdelivr.net/npm/simple-lodash-fun/dist/index.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-lodash-fun/dist/index.umd.min.js"></script>
 ```
 
 ---
@@ -103,7 +104,10 @@ nyc
 ## **Versions**
 
 ```javascript
-v-1.2.7(2021/7/17)
+v-1.1.9(2021/7/17)
+tag:CI脚本添加CDN打包更新
+
+v-1.1.8(2021/7/17)
 tag:成功配置一套完整的自动化构建脚本
 
 v-1.1.7(2021/7/17)
