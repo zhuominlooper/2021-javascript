@@ -3,6 +3,7 @@ const isMinPack = process.env.NODE_ENV.includes("min");
 const type = process.env.NODE_ENV.replace(/:.*/g, "");
 const libraryTarget = type;
 const config = {
+  target: "node",
   mode: isMinPack ? "production" : "development",
   entry: path.resolve(__dirname, "index.js"),
   output: {

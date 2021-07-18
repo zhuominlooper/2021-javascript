@@ -22,5 +22,5 @@ scripts:
   - npm run test:coveralls
   - npm run lint
   - npm run build
-  - npm run patch
+  - npm run minor
   - npm publish
