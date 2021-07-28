@@ -36,6 +36,10 @@
 | deepClone          |             深拷贝 |          YES | 2021/7/12 |
 | convertDimensional | 多维数组转一维数组 |          YES | 2021/7/14 |
 | counterfeitSort    |           冒泡排序 |          YES | 2021/7/15 |
+| trim               |           去掉空格 |          YES | 2021/7/28 |
+| arrNumSum          |       数组数值总和 |          YES | 2021/7/15 |
+| arrNumMax          |         数组最大值 |          YES | 2021/7/15 |
+| arrNumMin          |         数组最小值 |          YES | 2021/7/15 |
 
 ---
 
@@ -104,6 +108,15 @@ nyc
 ## **Versions**
 
 ```javascript
+v-1.3.1(2021/7/28)
+tag:添加数组的求和，最大值，最小值的方法
+
+v-1.3.0(2021/7/24)
+tag:CI脚本能进行正常的环境变量支持
+
+v-1.2.0(2021/7/17)
+tag:整理CI脚本支持环境变量
+
 v-1.1.9(2021/7/17)
 tag:CI脚本添加CDN打包更新
 
