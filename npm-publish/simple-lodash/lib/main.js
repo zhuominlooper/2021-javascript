@@ -56,7 +56,52 @@ function convertDimensional(arr) {
   }
 }
 
+//5. 实现trim的功能，不需要做判断，
+function trim(value) {
+  try {
+    return value ? (value.trim() ? value.trim() : "") : null;
+  } catch (err) {
+    console.log(error(`trim ERROR! ${err}`));
+    return null;
+  }
+}
+
+// 6. 计算数组的总和
+function arrNumSum(arr) {
+  try {
+    return arr.reduce((pre, next) => {
+      typeof next === "number" ? (pre += next) : null;
+      return pre;
+    }, 0);
+  } catch (err) {
+    console.log(error(`arrNumSum ERROR! ${err}`));
+  }
+}
+
+// 7. 计算数组的最大值
+function arrNumMax(arr) {
+  try {
+    return Math.max.apply(null, arr);
+  } catch (err) {
+    console.log(error(`arrNumMax ERROR! ${err}`));
+  }
+}
+
+// 8. 计算数组的最小值
+
+function arrNumMin(arr) {
+  try {
+    return Math.min.apply(null, arr);
+  } catch (err) {
+    console.log(error(`arrNumMin ERROR! ${err}`));
+  }
+}
+
 module.exports = {
+  arrNumMin,
+  arrNumMax,
+  arrNumSum,
+  trim,
   accurateType,
   pseudoArr2Array,
   deepClone,

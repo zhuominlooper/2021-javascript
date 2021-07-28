@@ -32,3 +32,31 @@ export function convertDimensional(data: Array) {}
  * @returns Object
  */
 export function counterfeitSort(data: Array) {}
+
+/**
+ * 去掉空格
+ * @param data String
+ * @returns String
+ */
+export function trim(data: String) {}
+
+/**
+ * 数组中的总和
+ * @param data Array
+ * @returns Number
+ */
+export function arrNumSum(data: Array) {}
+
+/**
+ * 数组中的最大值
+ * @param data Array
+ * @returns Number
+ */
+export function arrNumMax(data: Array) {}
+
+/**
+ * 数组中的最小值
+ * @param data Array
+ * @returns Number
+ */
+export function arrNumMin(data: Array) {}
