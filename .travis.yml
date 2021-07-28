@@ -7,7 +7,7 @@ node_js:
   - 14
 deploy:
   on:
-    branch: mian
+    branch: main
 cache:
   directories:
     - node_modules
