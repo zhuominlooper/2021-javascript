@@ -66,41 +66,29 @@ function trim(value) {
   }
 }
 
-// 6. 计算数组的总和
-function arrNumSum(arr) {
-  try {
-    return arr.reduce((pre, next) => {
-      typeof next === "number" ? (pre += next) : null;
-      return pre;
-    }, 0);
-  } catch (err) {
-    console.log(error(`arrNumSum ERROR! ${err}`));
-  }
-}
-
-// 7. 计算数组的最大值
-function arrNumMax(arr) {
-  try {
-    return Math.max.apply(null, arr);
-  } catch (err) {
-    console.log(error(`arrNumMax ERROR! ${err}`));
-  }
-}
-
-// 8. 计算数组的最小值
-
-function arrNumMin(arr) {
-  try {
-    return Math.min.apply(null, arr);
-  } catch (err) {
-    console.log(error(`arrNumMin ERROR! ${err}`));
-  }
+// 6.判断一张图片是否可加载，如果可以则返回img对象,并可以配置属性
+function getImgInstance(url, options = { alt: "加载失败" }) {
+  return new Promise((resolve, reject) => {
+    let img = new Image();
+    img.src = url;
+    img.onload = () => {
+      options.width && typeof options.width === "number"
+        ? (img.width = String(options.width < 4 ? 4 : options.width))
+        : null;
+      options.height && typeof options.height === "number"
+        ? (img.height = String(options.height < 4 ? 4 : options.height))
+        : null;
+      resolve(img);
+    };
+    img.onerror = () => {
+      img.alt = options.alt ? options.alt.trim() : "加载失败";
+      reject(img);
+    };
+  });
 }
 
 module.exports = {
-  arrNumMin,
-  arrNumMax,
-  arrNumSum,
+  getImgInstance,
   trim,
   accurateType,
   pseudoArr2Array,

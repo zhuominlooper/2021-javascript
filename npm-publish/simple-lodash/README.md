@@ -29,17 +29,19 @@
 
 ## **Current Function**
 
-| 函数名称           |           函数作用 | 是否测试通过 | 创建时间  |
-| ------------------ | -----------------: | -----------: | :-------: |
-| accurateType       |   准确判断数据类型 |          YES | 2021/7/10 |
-| pseudoArr2Array    |     伪数组转真数组 |          YES | 2021/7/10 |
-| deepClone          |             深拷贝 |          YES | 2021/7/12 |
-| convertDimensional | 多维数组转一维数组 |          YES | 2021/7/14 |
-| counterfeitSort    |           冒泡排序 |          YES | 2021/7/15 |
-| trim               |           去掉空格 |          YES | 2021/7/28 |
-| arrNumSum          |       数组数值总和 |          YES | 2021/7/15 |
-| arrNumMax          |         数组最大值 |          YES | 2021/7/15 |
-| arrNumMin          |         数组最小值 |          YES | 2021/7/15 |
+| 函数名称           |                           函数作用 | 是否测试通过 | 创建时间  |
+| ------------------ | ---------------------------------: | -----------: | :-------: |
+| accurateType       |                   准确判断数据类型 |          YES | 2021/7/10 |
+| pseudoArr2Array    |                     伪数组转真数组 |          YES | 2021/7/10 |
+| deepClone          |                             深拷贝 |          YES | 2021/7/12 |
+| convertDimensional |                 多维数组转一维数组 |          YES | 2021/7/14 |
+| counterfeitSort    |                           冒泡排序 |          YES | 2021/7/15 |
+| trim               |                           去掉空格 |          YES | 2021/7/18 |
+| arrNumSum          |                       数组数值总和 |          YES | 2021/7/28 |
+| arrNumMax          |                         数组最大值 |          YES | 2021/7/28 |
+| arrNumMin          |                         数组最小值 |          YES | 2021/7/28 |
+| compact            |               返回数组中的非假数值 |          YES | 2021/7/30 |
+| getImgInstance     | 判断是否是有效 url 并返回 img 实例 |          YES | 2021/7/30 |
 
 ---
 
@@ -109,7 +111,7 @@ nyc
 
 ```javascript
 v-1.3.1(2021/7/28)
-tag:添加数组的求和，最大值，最小值的方法
+tag:添加数组的求和，最大值，最小值的方法，获取图片实例等方法
 
 v-1.3.0(2021/7/24)
 tag:CI脚本能进行正常的环境变量支持
