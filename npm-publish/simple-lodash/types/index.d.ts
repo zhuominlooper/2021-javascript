@@ -1,3 +1,4 @@
+import { imgOptions } from "./index.interface";
 /**
  * 判断js数据的准确类型
  * @param data any
@@ -60,3 +61,17 @@ export function arrNumMax(data: Array) {}
  * @returns Number
  */
 export function arrNumMin(data: Array) {}
+
+/**
+ * 返回数组中的非假数值
+ * @param data Array
+ * @returns Array
+ */
+export function compact(data: Array) {}
+
+/**
+ * 返回img实例
+ * @param data Array
+ * @returns Array
+ */
+export function getImgInstance(url: String, data?: imgOptions) {}
