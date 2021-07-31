@@ -1,7 +1,7 @@
 const chalk = require("chalk");
 
 const error = chalk.bold.red;
-// const warning = chalk.bold.yellow;
+const warning = chalk.bold.yellow;
 
 // 1.判断js数据的准确类型
 function accurateType(data) {
@@ -68,23 +68,31 @@ function trim(value) {
 
 // 6.判断一张图片是否可加载，如果可以则返回img对象,并可以配置属性
 function getImgInstance(url, options = { alt: "加载失败" }) {
-  return new Promise((resolve, reject) => {
-    let img = new Image();
-    img.src = url;
-    img.onload = () => {
-      options.width && typeof options.width === "number"
-        ? (img.width = String(options.width < 4 ? 4 : options.width))
-        : null;
-      options.height && typeof options.height === "number"
-        ? (img.height = String(options.height < 4 ? 4 : options.height))
-        : null;
-      resolve(img);
-    };
-    img.onerror = () => {
-      img.alt = options.alt ? options.alt.trim() : "加载失败";
-      reject(img);
-    };
-  });
+  if (typeof window === "object") {
+    return new Promise((resolve, reject) => {
+      let img = new Image();
+      img.src = url;
+      img.onload = () => {
+        options.width && typeof options.width === "number"
+          ? (img.width = String(options.width < 4 ? 4 : options.width))
+          : null;
+        options.height && typeof options.height === "number"
+          ? (img.height = String(options.height < 4 ? 4 : options.height))
+          : null;
+        resolve(img);
+      };
+      img.onerror = () => {
+        reject("加载失败");
+      };
+    });
+  } else {
+    console.log(
+      warning(
+        `accurateType WARNING! GetImgInstance() does not support the node environment`
+      )
+    );
+    return Promise.reject("加载失败");
+  }
 }
 
 module.exports = {

@@ -7,5 +7,6 @@
     ["@babel/plugin-proposal-decorators", { "legacy": true }], //转化装饰器
     ["@babel/plugin-proposal-class-properties", { "loose": true }], //转化class
     ["@babel/plugin-transform-runtime"] //转换一些es6的高级api，比如promise，生成器函数
-  ]
+  ],
+  "sourceType": "unambiguous" //由于加了@babel转化器，webpack会默认使用的es6导入，但是代码中使用的是nodejs语法，就会有冲突，故须加上这个配置
 }

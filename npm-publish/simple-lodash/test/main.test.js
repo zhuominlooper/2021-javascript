@@ -52,7 +52,13 @@ describe("trim函数测试:", function () {
 describe("getImgInstance函数测试:", function () {
   it("result:", function () {
     Fun.getImgInstance(
-      "https://sponsor-static.segmentfault.com/cdce7ab67d0eb47a6c76ffad6afcdd60.jpg"
-    );
+      "https://sponsor-static.segmentfault.com/cdce7ab67d0eb47a6c76ffad6afcdd60111.jpg"
+    )
+      .then((res) => {
+        console.log("res", res);
+      })
+      .catch((err) => {
+        console.log(111, err);
+      });
   });
 });
