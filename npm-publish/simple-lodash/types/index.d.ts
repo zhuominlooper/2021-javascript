@@ -1,4 +1,4 @@
-import { imgOptions } from "./index.interface";
+const imgOptions = require("./index.interface");
 /**
  * 判断js数据的准确类型
  * @param data any
