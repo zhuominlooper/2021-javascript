@@ -5,9 +5,6 @@
 language: node_js
 node_js:
   - 14
-deploy:
-  on:
-    branch: main
 cache:
   directories:
     - node_modules
