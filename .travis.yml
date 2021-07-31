@@ -17,7 +17,7 @@ install:
 scripts:
   - npm run test
   - npm run test:coveralls
-  - npm run lint
-  - npm run build
-  - npm run patch
-  - npm publish
+  # - npm run lint
+  # - npm run build
+  # - npm run patch
+  # - npm publish

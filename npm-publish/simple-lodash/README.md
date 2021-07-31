@@ -1,13 +1,17 @@
 ## **simple-lodash-fun**
 
 [![Build Status](https://www.travis-ci.com/zhuominlooper/2021-javascript.svg?branch=main)](https://www.travis-ci.com/zhuominlooper/2021-javascript)
-[![Coverage Status](https://coveralls.io/repos/github/zhuominlooper/2021-javascript/badge.svg?branch=dev)](https://coveralls.io/github/zhuominlooper/2021-javascript?branch=dev)
-[![npm version](https://img.shields.io/npm/v/simple-lodash-fun.svg)](https://www.npmjs.com/package/simple-lodash-fun)
 [![npm downloads](https://img.shields.io/npm/dm/simple-lodash-fun.svg)](https://www.npmjs.com/package/simple-lodash-fun)
+[![npm version](https://img.shields.io/npm/v/simple-lodash-fun.svg)](https://www.npmjs.com/package/simple-lodash-fun)
+![node](https://img.shields.io/badge/node%40latest-%3E%3D%206.0.0-brightgreen)
+
+[![check Status](https://img.shields.io/badge/checks-passing-brightgreen)](https://github.com/zhuominlooper/2021-javascript/pulls)
+[![tests Status](https://img.shields.io/badge/test-passing-brightgreen)](https://coveralls.io/github/zhuominlooper/2021-javascript)
+[![Coverage Status](https://coveralls.io/repos/github/zhuominlooper/2021-javascript/badge.svg?branch=dev)](https://coveralls.io/github/zhuominlooper/2021-javascript?branch=dev)
+
 ![gitter chat](https://img.shields.io/gitter/room/mzabriskie/simple-lodash-fun.svg)
 ![license](https://img.shields.io/badge/license-MIT-green)
 [![author](https://img.shields.io/badge/author-looper.zhuo-orange)](https://github.com/zhuominlooper)
-![node](https://img.shields.io/badge/node%40latest-%3E%3D%206.0.0-brightgreen)
 
 ---
 
@@ -110,10 +114,10 @@ nyc
 ## **Versions**
 
 ```javascript
-v-1.3.1(2021/7/28)
+v-1.2.1(2021/7/28)
 tag:添加数组的求和，最大值，最小值的方法，获取图片实例等方法
 
-v-1.3.0(2021/7/24)
+v-1.2.1(2021/7/24)
 tag:CI脚本能进行正常的环境变量支持
 
 v-1.2.0(2021/7/17)
