@@ -13,35 +13,35 @@ describe("arrNumSum函数测试:", function () {
   });
 });
 
-describe("arrNumMax函数测试:", function () {
-  it("result:", function () {
-    expect(Fun.arrNumMax([2, 3, -1, 1])).to.be.equal(3);
-  });
-  it("result:", function () {
-    expect(Fun.arrNumSum({})).to.be.equal(undefined);
-  });
-  it("result:", function () {
-    expect(Fun.arrNumMax([2, 3, "looper"])).to.be.deep.equal(NaN);
-  });
-});
+// describe("arrNumMax函数测试:", function () {
+//   it("result:", function () {
+//     expect(Fun.arrNumMax([2, 3, -1, 1])).to.be.equal(3);
+//   });
+//   it("result:", function () {
+//     expect(Fun.arrNumSum({})).to.be.equal(undefined);
+//   });
+//   it("result:", function () {
+//     expect(Fun.arrNumMax([2, 3, "looper"])).to.be.deep.equal(NaN);
+//   });
+// });
 
-describe("arrNumMin函数测试:", function () {
-  it("result:", function () {
-    expect(Fun.arrNumMin([2, 3, -1, 1])).to.be.equal(-1);
-  });
-  it("result:", function () {
-    expect(Fun.arrNumMin({})).to.be.equal(Infinity);
-  });
-  it("result:", function () {
-    expect(Fun.arrNumMin([2, 3, "looper"])).to.be.deep.equal(NaN);
-  });
-});
+// describe("arrNumMin函数测试:", function () {
+//   it("result:", function () {
+//     expect(Fun.arrNumMin([2, 3, -1, 1])).to.be.equal(-1);
+//   });
+//   it("result:", function () {
+//     expect(Fun.arrNumMin({})).to.be.equal(Infinity);
+//   });
+//   it("result:", function () {
+//     expect(Fun.arrNumMin([2, 3, "looper"])).to.be.deep.equal(NaN);
+//   });
+// });
 
-describe("compact函数测试:", function () {
-  it("result:", function () {
-    expect(Fun.compact([2, false, "", NaN])).to.be.deep.equal([2]);
-  });
-  it("result:", function () {
-    expect(Fun.compact({})).to.be.deep.equal({});
-  });
-});
+// describe("compact函数测试:", function () {
+//   it("result:", function () {
+//     expect(Fun.compact([2, false, "", NaN])).to.be.deep.equal([2]);
+//   });
+//   it("result:", function () {
+//     expect(Fun.compact({})).to.be.deep.equal({});
+//   });
+// });
