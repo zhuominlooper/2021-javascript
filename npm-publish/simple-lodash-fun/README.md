@@ -1,6 +1,6 @@
 ## **simple-lodash-fun**
 
-[![Build Status](https://www.travis-ci.com/zhuominlooper/2021-javascript.svg?branch=dev)](https://www.travis-ci.com/zhuominlooper/2021-javascript)
+[![Build Status](https://www.travis-ci.com/zhuominlooper/2021-javascript.svg?branch=main)](https://www.travis-ci.com/zhuominlooper/2021-javascript)
 [![npm downloads](https://img.shields.io/npm/dm/simple-lodash-fun.svg)](https://www.npmjs.com/package/simple-lodash-fun)
 [![npm version](https://img.shields.io/npm/v/simple-lodash-fun.svg)](https://www.npmjs.com/package/simple-lodash-fun)
 ![node](https://img.shields.io/badge/node%40latest-%3E%3D%206.0.0-brightgreen)

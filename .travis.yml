@@ -13,7 +13,7 @@ cache:
   directories:
     - node_modules
 before_install:
-  - cd ./npm-publish/simple-lodash
+  - cd ./npm-publish/simple-lodash-fun
   - npm install npm-cli-login -S
   - NPM_USER=${npm_user} NPM_PASS=${npm_pass} NPM_EMAIL=${npm_email} npm-cli-login
 install:
