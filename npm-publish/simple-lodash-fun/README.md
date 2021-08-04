@@ -46,6 +46,8 @@
 | arrNumMin          |                         数组最小值 |          YES | 2021/7/28 |
 | compact            |               返回数组中的非假数值 |          YES | 2021/7/30 |
 | getImgInstance     | 判断是否是有效 url 并返回 img 实例 |          YES | 2021/7/30 |
+| throttle           |                               节流 |          YES | 2021/8/4  |
+| debounce           |                               防抖 |          YES | 2021/8/4  |
 
 ---
 
@@ -114,6 +116,9 @@ nyc
 ## **Versions**
 
 ```javascript
+v-1.2.4(2021/8/4)
+tag:实现防抖节流函数，新增在node环境下和window下的异常处理机制
+
 v-1.2.3(2021/7/31)
 tag:实现CDN打包在浏览器下直接运行，并优化打包，实现在浏览器下访问process全局变量
 

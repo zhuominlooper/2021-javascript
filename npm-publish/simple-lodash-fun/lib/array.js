@@ -1,5 +1,4 @@
 // 数组常用的方法
-
 const chalk = require("chalk");
 const error = chalk.bold.red;
 // 1. 计算数组的总和
@@ -16,21 +15,13 @@ function arrNumSum(arr) {
 
 // 2. 计算数组的最大值
 function arrNumMax(arr) {
-  try {
-    return Math.max.apply(null, arr);
-  } catch (err) {
-    console.log(error(`arrNumMax ERROR! ${err}`));
-  }
+  return Math.max.apply(null, arr);
 }
 
 // 3. 计算数组的最小值
 
 function arrNumMin(arr) {
-  try {
-    return Math.min.apply(null, arr);
-  } catch (err) {
-    console.log(error(`arrNumMin ERROR! ${err}`));
-  }
+  return Math.min.apply(null, arr);
 }
 
 // 4.创建一个新数组，返回值是原来数组的非假数值

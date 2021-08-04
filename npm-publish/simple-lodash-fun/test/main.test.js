@@ -45,7 +45,7 @@ describe("trim函数测试:", function () {
     expect(Fun.trim("         ")).to.be.equal("");
   });
   it("result:", function () {
-    expect(Fun.trim([])).to.be.equal(null);
+    expect(Fun.trim(null)).to.be.equal("");
   });
 });
 
@@ -58,7 +58,23 @@ describe("getImgInstance函数测试:", function () {
         console.log("res", res);
       })
       .catch((err) => {
-        console.log(111, err);
+        console.log(err);
       });
+  });
+});
+
+describe("debounce函数测试:", function () {
+  it("result:", function () {
+    Fun.debounce(() => {
+      console.log("测试debounce函数");
+    }, 2000)();
+  });
+});
+
+describe("throttle函数测试:", function () {
+  it("result:", function () {
+    Fun.throttle(() => {
+      console.log("测试throttle函数");
+    }, 2000)();
   });
 });
