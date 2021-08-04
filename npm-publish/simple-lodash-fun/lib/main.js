@@ -1,26 +1,14 @@
 const chalk = require("chalk");
-
-const error = chalk.bold.red;
 const warning = chalk.bold.yellow;
 
 // 1.判断js数据的准确类型
 function accurateType(data) {
-  try {
-    return Object.prototype.toString.call(data).split(" ")[1].replace("]", "");
-  } catch (err) {
-    console.log(error(`accurateType ERROR! ${err}`));
-    return "NAN";
-  }
+  return Object.prototype.toString.call(data).split(" ")[1].replace("]", "");
 }
 
 // 2.将伪数组转真数组,如果转换失败则报错
 function pseudoArr2Array(data) {
-  try {
-    return Array.prototype.slice.call(data);
-  } catch (err) {
-    console.log(error(`pseudoArr2Array ERROR! ${err}`));
-    return [];
-  }
+  return Array.prototype.slice.call(data);
 }
 
 // 3.深拷贝的实现
@@ -43,27 +31,17 @@ function deepClone(value) {
 
 // 4. 多维数组转为一维数组， 目前仅支持全部 Number -> Ndumber, String -> Number
 function convertDimensional(arr) {
-  try {
-    return arr
-      .join()
-      .split(",")
-      .map((value) => {
-        return Number(value);
-      });
-  } catch (err) {
-    console.log(error(`convertDimensional ERROR! ${err}`));
-    return [];
-  }
+  return arr
+    .join()
+    .split(",")
+    .map((value) => {
+      return Number(value);
+    });
 }
 
 //5. 实现trim的功能，不需要做判断，
 function trim(value) {
-  try {
-    return value ? (value.trim() ? value.trim() : "") : null;
-  } catch (err) {
-    console.log(error(`trim ERROR! ${err}`));
-    return null;
-  }
+  return value ? (value.trim() ? value.trim() : "") : "";
 }
 
 // 6.判断一张图片是否可加载，如果可以则返回img对象,并可以配置属性
@@ -95,7 +73,36 @@ function getImgInstance(url, options = { alt: "加载失败" }) {
   }
 }
 
+// 7.防抖实现
+function debounce(fun, deley = 100) {
+  let timer = null;
+  return function () {
+    if (timer) {
+      clearTimeout(timer);
+    }
+    timer = setTimeout(() => {
+      fun();
+    }, deley);
+  };
+}
+
+// 8.节流的实现
+function throttle(fun, deley = 100) {
+  let timer = null;
+  return function () {
+    if (timer) {
+      return;
+    }
+    timer = setTimeout(() => {
+      fun();
+      timer = null;
+    }, deley);
+  };
+}
+
 module.exports = {
+  debounce,
+  throttle,
   getImgInstance,
   trim,
   accurateType,

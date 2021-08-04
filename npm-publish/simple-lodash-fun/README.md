@@ -1,6 +1,6 @@
 ## **simple-lodash-fun**
 
-[![Build Status](https://www.travis-ci.com/zhuominlooper/2021-javascript.svg?branch=main)](https://www.travis-ci.com/zhuominlooper/2021-javascript)
+[![Build Status](https://www.travis-ci.com/zhuominlooper/2021-javascript.svg?branch=dev)](https://www.travis-ci.com/zhuominlooper/2021-javascript)
 [![npm downloads](https://img.shields.io/npm/dm/simple-lodash-fun.svg)](https://www.npmjs.com/package/simple-lodash-fun)
 [![npm version](https://img.shields.io/npm/v/simple-lodash-fun.svg)](https://www.npmjs.com/package/simple-lodash-fun)
 ![node](https://img.shields.io/badge/node%40latest-%3E%3D%206.0.0-brightgreen)
@@ -46,6 +46,8 @@
 | arrNumMin          |                         数组最小值 |          YES | 2021/7/28 |
 | compact            |               返回数组中的非假数值 |          YES | 2021/7/30 |
 | getImgInstance     | 判断是否是有效 url 并返回 img 实例 |          YES | 2021/7/30 |
+| throttle           |                               节流 |          YES | 2021/8/4  |
+| debounce           |                               防抖 |          YES | 2021/8/4  |
 
 ---
 
@@ -114,6 +116,9 @@ nyc
 ## **Versions**
 
 ```javascript
+v-1.2.4(2021/8/4)
+tag:实现防抖节流函数，新增在node环境下和window下的异常处理机制
+
 v-1.2.3(2021/7/31)
 tag:实现CDN打包在浏览器下直接运行，并优化打包，实现在浏览器下访问process全局变量
 

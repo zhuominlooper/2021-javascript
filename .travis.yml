@@ -7,8 +7,8 @@ node_js:
   - 14
 deploy:
   on:
-    # 表示在main分支不走CI
-    branch: main
+    # 表示在dev分支不走CI
+    branch: dev
 cache:
   directories:
     - node_modules

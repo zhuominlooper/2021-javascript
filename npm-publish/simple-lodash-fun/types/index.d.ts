@@ -75,3 +75,19 @@ export function compact(data: Array): Number {}
  * @returns Array
  */
 export function getImgInstance(url: String, data?: imgOptions): Array {}
+
+/**
+ * 防抖的实现
+ * @param fun Function
+ * @param deley Number
+ * @returns void
+ */
+export function debounce(fun: Function, deley?: Number): void {}
+
+/**
+ * 节流的实现
+ * @param fun Function
+ * @param deley Number
+ * @returns void
+ */
+export function throttle(fun: Function, deley?: Number): void {}
