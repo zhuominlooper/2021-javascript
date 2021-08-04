@@ -79,6 +79,15 @@ console.log(_.accurateType([])); //Array
 
 ---
 
+```javascript
+window：
+ <script src="https://cdn.jsdelivr.net/npm/simple-lodash-fun/dist/index.umd.min.js"></script>
+console.log(simple_lodash.accurateType(null)); //Null
+console.log(simple_lodash.accurateType([])); //Array
+```
+
+---
+
 ## **License**
 
 ### MIT
