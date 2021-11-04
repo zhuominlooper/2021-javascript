@@ -11,7 +11,7 @@ const config = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: `index.${type}${isMinPack ? ".min" : ""}.js`,
-    library: "simple_lodash", //打包导出的变量名称
+    library: "myLodash", //打包导出的变量名称
     globalObject: "this", // 定义全局变量,兼容node和浏览器运行，避免出现"window is not defined"的情况
     libraryTarget, // 定义打包方式Universal Module Definition,根据环境判断打包方式同时支持在CommonJS、AMD，Script和全局变量使用
   },

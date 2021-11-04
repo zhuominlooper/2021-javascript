@@ -5,21 +5,22 @@
 language: node_js
 node_js:
   - 14
-deploy:
-  on:
-    # 表示在dev分支不走CI
-    branch: dev
+branches:
+  # 只在main分支push的时候触发
+  only:
+    - main
 cache:
   directories:
     - node_modules
 before_install:
-  - cd ./npm-publish/simple-lodash-fun
   - npm install npm-cli-login -S
   - NPM_USER=${npm_user} NPM_PASS=${npm_pass} NPM_EMAIL=${npm_email} npm-cli-login
 install:
   - npm install
 scripts:
+  - npm cache clean --force
+  - npm run lint
   - npm run test
   - npm run test:coveralls
-  - npm run lint
   - npm run build
+  - npm publish
