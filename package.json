@@ -1,6 +1,6 @@
 {
   "name": "simple-lodash-fun",
-  "version": "1.2.4",
+  "version": "1.2.8",
   "createTime": "2021/7/10",
   "description": "This is a simplified version of Lodash, but it's no less functional",
   "main": "index.js",
@@ -29,11 +29,10 @@
     "build:cjs": "cross-env NODE_ENV=commonjs webpack",
     "build:cjs:min": "cross-env NODE_ENV=commonjs:min webpack",
     "lint": "eslint lib/*",
-    "lint:fix": "eslint --fix lib/*",
     "test": "nyc --reporter=text  mocha  --recursive",
     "test:coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
-  "author": "looper.zhuo,charles.chen",
+  "author": "looper.zhuo",
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
